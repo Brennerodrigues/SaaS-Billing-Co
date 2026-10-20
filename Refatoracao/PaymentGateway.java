@@ -1,5 +1,5 @@
 package com.saas.billing;
 
-public interface NotificationService {
-    void sendReceipt(String email, Money amount);
+public interface PaymentGateway {
+    boolean charge(String cardToken, Money amount);
 }
